@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="theme-color" content="#003366" />
+    <title>Bitcoin School Kenya - Circular Economy</title>
+    <meta name="description" content="Empowering Bitcoin education and building a circular economy in Kenya." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ocean: {
+                deep: '#001a33',
+                dark: '#003366',
+                primary: '#0077be',
+                light: '#00a8cc',
+                pale: '#f0faff'
+              },
+              bitcoin: {
+                orange: '#F7931A',
+                dark: '#2D2D2D',
+                light: '#FFF8F0',
+                black: '#000000'
+              },
+            },
+            fontFamily: {
+              sans: ['Ubuntu', 'sans-serif'],
+              display: ['Ubuntu', 'sans-serif'],
+            },
+            boxShadow: {
+              'hard': '6px 6px 0px 0px #000000',
+              'hard-sm': '3px 3px 0px 0px #000000',
+              'glow': '0 0 25px rgba(0, 119, 190, 0.4)',
+              'ocean-hard': '6px 6px 0px 0px #001a33',
+            },
+            backgroundImage: {
+              'ocean-gradient': 'linear-gradient(135deg, #001a33 0%, #003366 50%, #0077be 100%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #001a33 0%, #003366 50%, #0077be 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #001a33;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0077be;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00a8cc;
+      }
+      .lesson-path-line {
+        background: repeating-linear-gradient(
+          to bottom,
+          #F7931A,
+          #F7931A 10px,
+          transparent 10px,
+          transparent 20px
+        );
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-slate-900 font-sans text-xl antialiased selection:bg-black selection:text-white min-h-screen overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
