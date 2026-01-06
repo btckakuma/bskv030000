@@ -1,18 +1,18 @@
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from './components/Layout';
-import { Home } from './pages/Home';
-import { About } from './pages/About';
-import { Education } from './pages/Education';
-import { Merchants } from './pages/Merchants';
-import { MerchantAcademy } from './pages/MerchantAcademy';
-import { Events } from './pages/Events';
-import { GetStarted } from './pages/GetStarted';
-import { Contact } from './pages/Contact';
-import { Donate } from './pages/Donate';
-import { Blog } from './pages/Blog';
-import { Community } from './pages/Community';
-import { John316 } from './pages/John316';
+import { Layout } from './components/Layout.tsx';
+import { Home } from './pages/Home.tsx';
+import { About } from './pages/About.tsx';
+import { Education } from './pages/Education.tsx';
+import { Merchants } from './pages/Merchants.tsx';
+import { MerchantAcademy } from './pages/MerchantAcademy.tsx';
+import { Events } from './pages/Events.tsx';
+import { GetStarted } from './pages/GetStarted.tsx';
+import { Contact } from './pages/Contact.tsx';
+import { Donate } from './pages/Donate.tsx';
+import { Blog } from './pages/Blog.tsx';
+import { Community } from './pages/Community.tsx';
+import { John316 } from './pages/John316.tsx';
 
 function App() {
   return (
